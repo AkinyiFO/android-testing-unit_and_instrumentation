@@ -30,7 +30,7 @@ import kotlinx.coroutines.launch
  * ViewModel for the Details screen.
  */
 class TaskDetailViewModel(application: Application) : AndroidViewModel(application) {
-    
+
     private val tasksRepository = DefaultTasksRepository.getRepository(application)
 
     private val _taskId = MutableLiveData<String>()
