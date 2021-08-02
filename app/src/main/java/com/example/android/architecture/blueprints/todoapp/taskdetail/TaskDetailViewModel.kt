@@ -30,9 +30,7 @@ import kotlinx.coroutines.launch
  * ViewModel for the Details screen.
  */
 class TaskDetailViewModel(application: Application) : AndroidViewModel(application) {
-
-    // Note, for testing and architecture purposes, it's bad practice to construct the repository
-    // here. We'll show you how to fix this during the codelab
+    
     private val tasksRepository = DefaultTasksRepository.getRepository(application)
 
     private val _taskId = MutableLiveData<String>()
